@@ -1,6 +1,6 @@
-# Your task is to write a responsive JavaScript application that allows a logged in user to search Github.com for other users.
+### Your task is to write a responsive JavaScript application that allows a logged in user to search Github.com for other users' public repositories.
 
-It is a pretty open ended exercise, so feel free to use any other javascript library you want. However, you must need to use Angular js for this exercise.
+It is a pretty open ended exercise, so feel free to use any other javascript libraries you want. However, you **must** use Angular js for this exercise.
 
 Requirements
 * Show a login box initially for a github user to login with their username/password (basic auth is fine).
