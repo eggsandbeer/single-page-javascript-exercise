@@ -10,3 +10,4 @@ Requirements
 * Please note that subsequent searches for the same previously searched username should not trigger further requests (but the client should still see the previous results).
 * Solution does not need to support older browsers.
 * Please note that the web app should be optimized for screens with varying sizes.
+* For more information about the github.js api, please refer to https://github.com/michael/github/tree/v0.7.x
