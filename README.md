@@ -1,6 +1,6 @@
 # EA Single Page App Test
 
-## Your task is to write a responsive JavaScript application that allows a person to search Github.com for other users' public repositories.
+#### Your task is to write a responsive JavaScript application that allows a person to search Github.com for other users' public repositories.
 
 ### Setup
 
@@ -10,9 +10,9 @@
 gem install compass sass
 ```
 * Install NodeJS (http://nodejs.org/download/).
-* Install Grunt by running:
+* Install Grunt, Bower, and Yeoman by running:
 ```
-npm install -g grunt-cli
+npm install -g grunt-cli bower yo generator-angular
 ```
 * Clone this project and install dependencies by running this command inside the project directory:
 ```
