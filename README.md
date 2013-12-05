@@ -40,6 +40,7 @@ https://api.github.com/users/USER_NAME/repos
 * Please note that subsequent searches for the same previously searched username should not trigger further requests (but the client should still see the previous results).
 * Solution does not need to support older browsers.
 * A controller, service, and directive have been scaffolded out for you to save time (look under app/scripts), but you do not need to use them if you don't want to.
+* Twitter Bootstrap is included so you're free to utilize that for styling.
 
 ### Nice to Haves
 
