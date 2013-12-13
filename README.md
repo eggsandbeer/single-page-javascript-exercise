@@ -1,6 +1,9 @@
 # EA Single Page App Test
 
-#### Your task is to write a responsive JavaScript application that allows a person to search Github.com for other users' public repositories.
+### Task
+
+* Your task is to write a responsive JavaScript application that allows a person to search Github.com for other users' public repositories.
+* This exercise is to be completed within 3 hours.
 
 ### Setup
 
@@ -33,7 +36,7 @@ grunt serve
 
 ### Requirements
 
-* This exercise is to be completed within 3 hours. The requirements are open ended, just be sure to complete the following mandatory ones.
+* The requirements are open ended, just be sure to complete the following mandatory ones.
 * Application files are located under the "app" folder.
 * You must use AngularJS for this exercise (included in the starter application).
 * Have a search field that allows searching for a GitHub user's repositories. Call the following API (where USER_NAME is the value typed into the search field). See http://developer.github.com/v3/repos/#list-user-repositories for more info.
