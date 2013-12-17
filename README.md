@@ -59,6 +59,10 @@ grunt test
 * Responsive design.
 * Extended functionalities where you see fit.
 
-### README
+### Deliverables
 
-Please update this README file to include the time you spent and anything else you wish to convey. Good luck!
+* Please fork this project on GitHub and add your code to the forked project.
+* Update the README file to include the time you spent and anything else you wish to convey.
+* Send the link to your forked GitHub project to your recruiter.
+
+**Good luck!**
