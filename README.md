@@ -8,6 +8,8 @@
 
 * With these files, if you look at main-me-app.js in the root dir, you should be able to follow my workflow from there. The general idea is to keep code highly modular and highly reuseable, a standard I would hope to follow at EA too. Obviously, this code won't load in the browser as it has no env or script call even, but it should give you some idea of how I work. If you have any questions feel free to contact me at <cameron.strandberg@gmail.com>.
 
-* Thanks for your time and all the best in your search for a great dev -- which I believe is me :)
+* Thanks for your time and all the best in your search for a great dev -- which I believe is me :). I'm certainly not an angular master but I believe I could pick it and excel in it quite quickly. Most of my readings and conversations lead me to believe that angular is easier to use than backbone once the basics are mastered. I would agree with this and hope it somewhat influences your opinion about my skillsets.
+
+* Thanks again.
 
 ### Love, Cameron
