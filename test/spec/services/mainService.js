@@ -21,6 +21,5 @@ describe('Service: Mainservice', function () {
 
   it('should have a get user info function attached', function () {
     expect(MainService.getUserRepos).toBeDefined();
-
   });
 });
