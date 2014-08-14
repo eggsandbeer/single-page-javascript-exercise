@@ -1,0 +1,35 @@
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h2>{{title}}</h2>
+    {{#if subtitle}}
+    <p>{{subtitle}}</p>
+    {{/if}}
+</div>
+<div class="modal-body">
+    <form>
+        <div id="{{parentId}}" class="content">
+            {{#if nofeatures}}
+            <div class="alert alert-info">
+                {{nofeatures}}
+            </div>
+            {{/if}}
+            {{#each units}}
+            <div class="feature-container">
+                <input name="[units][{{@key}}]" type="checkbox" class="hidden" {{#if configured}}checked{{/if}}/>
+                <div class="feature-icon component-icon-{{cssName}}">
+                    <span>{{name}}</span>
+                    {{#if configured}}
+                        <i class="icon-ok icon-white selected-check"></i>
+                    {{else}}
+                        <i class="icon-ok icon-white selected-check hidden"></i>
+                    {{/if}}
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <a href="#" class="pull-left btn btn-primary-qs js-submit {{#if nofeatures}}disabled{{/if}}">Save changes</a>
+    <a href="#" class="pull-left btn btn-link">Close</a>
+</div>

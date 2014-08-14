@@ -1,0 +1,18 @@
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h2>{{title}}</h2>
+    {{#if subtitle}}
+    <p>{{subtitle}}</p>
+    {{/if}}
+</div>
+<div class="modal-body">
+    <form>
+        <div id="{{parentId}}" class="content">
+
+        </div> 
+    </form>
+</div>
+<div class="modal-footer">
+    <a href="#" class="btn btn-cancel">Close</a>
+    <a href="#" class="btn btn-primary js-submit">Save</a>
+</div>

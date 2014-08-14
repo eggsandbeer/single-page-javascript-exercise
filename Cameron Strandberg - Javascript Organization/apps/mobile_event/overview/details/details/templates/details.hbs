@@ -1,0 +1,47 @@
+
+<div class="accordion-heading">
+    <a class="accordion-toggle" data-toggle="collapse" data-parent="#MEOverViewAccordion" href="#DetailsAccordion">
+        <h4>
+            <i class="accordion-indicator"></i>
+            Project Details
+        </h4>
+    </a>
+</div>
+<div id="DetailsAccordion" class="accordion-body collapse in">
+    <div class="accordion-inner">
+        <div class="row-fluid">
+            <div class="span4">
+                <h4>General</h4>
+                <p class="zebra"><strong>Project Name:</strong><span class="pull-right">{{Name}}</span></p>
+                <p><strong>Project Status:</strong><span class="pull-right">{{status}}</span></p>
+                <p class="zebra"><strong>Type:</strong><span class="pull-right">{{type}}</span></p>
+                <p><strong>Application Id:</strong><span class="pull-right">{{applicationId}}</span></p>
+                <p class="zebra"><strong>Estimated Number of Attendees:</strong><span class="pull-right">{{size}}</span></p>
+                <p><strong>Timezone:</strong><span class="pull-right">{{timeZone}}</span></p>
+                <p class="zebra"><strong>Release Date:</strong><span class="pull-right">{{releaseDate}}</span></p>
+                <p><strong>App Activation Date:</strong><span class="pull-right">{{activationDate}}</span></p>
+                <p class="zebra"><strong>Expiry Date:</strong><span class="pull-right">{{expiryDate}}</span></p>
+            </div>
+
+            <div class="span4">
+               <h4>Mobile-Event multi-event app Details</h4>
+               <p class="zebra"><strong>Mobile-Event App Version:</strong><span class="pull-right">{{mobile_eventVersion}}</span></p>
+               <p><strong>Max QuickEvents Permitted:</strong><span class="pull-right">{{maxQEPermitted}}</span></p>
+               <p class="zebra"><strong>QuickEvents:</strong><span class="pull-right">{{quickEvents}} of {{maxQEPermitted}} used</span></p>
+            </div>
+
+            <div class="span4">
+                <h4>Customer Contact</h4>
+                <p class="zebra"><strong>Contact Name:</strong><span class="pull-right">{{customerContactName}}</span></p>
+                <p><strong>Contact Email:</strong><span class="pull-right">{{customerContacteMail}}</span></p>
+                <p class="zebra"><strong>Contact Phone:</strong><span class="pull-right">{{customerContactPhone}}</span></p>
+                <h4>QuickMobile Contact</h4>
+                <p class="zebra"><strong>Sales Rep:</strong><span class="pull-right">{{primaryQMSalesRep}}</span></p>
+                <p><strong>Contact Name:</strong><span class="pull-right">{{salesContactName}}</span></p>
+                <p class="zebra"><strong>Contact Email:</strong><span class="pull-right">{{primaryQMEmail}}</span></p>
+                <p><strong>Contact Phone Number:</strong><span class="pull-right">{{primaryQMPhone}}</span></p>
+            </div>
+        </div>
+        <button class="btn btn-primary clear-fix js-overview-modal">Edit Project Details</button>
+    </div>
+</div>

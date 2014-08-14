@@ -1,0 +1,32 @@
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h2>Languages</h2>
+    <p>Select languages that you want to support. Making changes after your app has been published will require app store resubmission.</p>
+</div>
+<div class="modal-body">
+    <form>
+        <div class="control-group" id="LanguageList">
+            <div class="row-fluid">
+                <div class="span11 offset1">
+                    <ul class="unstyled">
+                        {{#each languages}}
+                        <li class="clearfix">
+                            <label class="checkbox span4">
+                                <input class="selected-checkbox" type="checkbox" name="[languages][{{language}}][enabled]" {{#if selected}}checked{{/if}} {{#if isDefault}}disabled{{/if}}>
+                                <input type="checkbox" class="hidden-default hidden" type="checkbox" name="[languages][{{language}}][isDefault]" {{#if isDefault}}checked{{/if}}>
+                                {{label}}
+                            </label>
+                            <span class="badge badge-info {{#if isDefault}}display{{/if}} pull-left">default</span>
+                            <span class="badge default pull-left {{#if isDefault}}no-display{{/if}}">set as default</span>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <a href="#" class="pull-left btn btn-primary-qs js-submit">Save changes</a>
+    <a href="#" class="pull-left btn btn-link">Close</a>
+</div>

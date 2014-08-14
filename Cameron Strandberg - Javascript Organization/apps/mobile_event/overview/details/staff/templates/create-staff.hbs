@@ -1,0 +1,59 @@
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h2>Create Staff</h2>
+    <p>Create a new staff member that will be automatically assigned to this MobileEvent muilt-event app. Staff assigned to the project will have access to all QuickEvents.</p>
+</div>
+<div class="modal-body">
+    <form class="form-horizontal">
+        <div id="staff">
+            <div class="control-group">
+                <label for="username" class="control-label">
+                    User Name <span class="required">*</span>
+                </label>
+                <div class="controls">
+                    <input id="Staff-username" type="text" name="username">
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="fullname" class="control-label">
+                    Full Name <span class="required">*</span>
+                </label>
+                <div class="controls">
+                    <input id="Staff-fullname" type="text" name="fullname">
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="role" class="control-label">
+                   Role
+                </label>
+                <div class="controls">
+                    <select name="role" class="">
+                        {{#each roles}}
+                            <option value="{{@key}}">{{this}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="password" class="control-label">
+                    Password <span class="required">*</span>
+                </label>
+                <div class="controls">
+                    <input id="Staff-password" type="password" name="password">
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="verifyPassword" class="control-label">
+                    Verify Password <span class="required">*</span>
+                </label>
+                <div class="controls">
+                    <input id="Staff-verifypassword" type="password" name="verifypassword">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <a href="#" class="pull-left btn btn-primary-qs js-submit">Save</a>
+    <a href="#" class="pull-left btn btn-link">Close</a>
+</div>

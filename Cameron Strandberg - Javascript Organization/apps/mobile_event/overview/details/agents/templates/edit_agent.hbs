@@ -1,0 +1,37 @@
+    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h2>Assigned Agents</h2>
+    <p>Select the agent that you would like to assign to this project</p>
+</div>
+<div class="modal-body">
+    <form class="form-horizontal">
+        <div id="platforms">
+            <div class="control-group">
+                <label class="control-label">
+                    Agent
+                </label>
+                <div class="controls">
+                    <select name="agent" id="Agent" disabled>
+                        <option val="{{agent}}">{{agent}}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">
+                    Function
+                </label>
+                <div class="controls">
+                    <select id="AgentFunctions" name="assignedFunction">
+                    {{#each functions}}
+                        <option value="{{this}}">{{this}}</option>
+                    {{/each}}
+                    </select>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <a href="#" class="pull-left btn btn-primary-qs js-submit">Save changes</a>
+    <a href="#" class="pull-left btn btn-link">Close</a>
+</div>

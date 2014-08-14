@@ -1,0 +1,161 @@
+    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h2>Project Details for {{Name}} </h2>
+</div>
+<div class="modal-body">
+    <form class="form-horizontal">
+        <h3>Project Details</h3>
+        <div class="control-group">
+            <label for="Name" class="control-label">
+                Project Name <span class="required">*</span>
+            </label>
+            <div class="controls">
+                <input id="Details-Name" type="text" name="Name" value="{{Name}}">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label for="size" class="control-label">
+                Estimated Number of Attendees <span class="required">*</span>
+            </label>
+            <div class="controls">
+                <input id="Details-size" type="text" name="size" value="{{size}}">
+            </div>
+        </div>
+        <div class="control-group">
+            <label for="timeZone" class="control-label">
+                Timezone
+            </label>
+            <div class="controls">
+                <select id="timeZone" name="timeZone" class="span3">
+                    {{#each timeZones}}
+                        <option value="{{id}}">{{title}}</option>
+                    {{/each}}
+                </select>
+            </div>
+        </div>
+        <div class="control-group">
+            <label for="effectiveDate" class="control-label">
+                ReleaseDate <span class="required">*</span>
+            </label>
+            <div class="controls">
+                <div id="EffectiveDate" class="input-append date">
+                    <input id="Details-effectiveDate" type="text" name="effectiveDate" class="span2" value="{{effectiveDate}}">
+                    <span class="add-on">
+                        <i class="icon-th"></i>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="control-group">
+            <label for="activationDate" class="control-label">
+                App Activation Date <span class="required">*</span>
+            </label>
+            <div class="controls">
+                <div id="ActivationDate" class="input-append date">
+                    <input type="text" id="Details-activationDate" name="activationDate" class="span2" value="{{activationDate}}">
+                    <span class="add-on">
+                        <i class="icon-th"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="control-group">
+            <label for="expiryDate" class="control-label">
+                Expiry Date <span class="required">*</span>
+            </label>
+            <div class="controls">
+                <div id="ExpiryDate" class="input-append date">
+                    <input id="Details-expiryDate" type="text" name="expiryDate" class="span2" value="{{expiryDate}}">
+                    <span class="add-on">
+                        <i class="icon-th"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="control-group">
+            <label for="status" class="control-label">
+                Project Status
+            </label>
+            <div class="controls">
+                <select id="ProjecStatus" name="status">
+                {{#each statuses}}
+                    <option value="{{this}}">{{this}}</option>
+                {{/each}}
+                </select>
+            </div>
+        </div>
+        <h3>Project Details</h3>
+        <div class="control-group">
+            <label for="maxQEPermitted" class="control-label">
+                Max QuickEvents Permitted
+            </label>
+            <div class="controls">
+                <input id="Details-maxQEPermitted" name="maxQEPermitted" type="text" value="{{ maxQEPermitted }}"/>
+            </div>
+        </div>
+        <h3>Customer Contact</h3>
+        <div class="control-group">
+            <label for="customerContactName" class="control-label">
+                Contact Name
+            </label>
+            <div class="controls">
+                <input id="Details-customerContactName" name="customerContactName" type="text" value="{{ customerContactName }}"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label for="customerContacteMail" class="control-label">
+                Contact Email
+            </label>
+            <div class="controls">
+                <input id="Details-customerContacteMail" name="customerContacteMail" type="text" value="{{ customerContacteMail }}"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label for="customerContactPhone" class="control-label">
+                Contact Phone Number
+            </label>
+            <div class="controls">
+                <input id="Details-customerContactPhone" name="customerContactPhone" type="text" value="{{ customerContactPhone }}"/>
+            </div>
+        </div>
+        <h3>QuickMobile Contact</h3>
+        <div class="control-group">
+            <label for="primaryQMSalesRep" class="control-label">
+                Sales Rep
+            </label>
+            <div class="controls">
+                <input id="Details-primaryQMSalesRep" name="primaryQMSalesRep" type="text" value="{{primaryQMSalesRep}}"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label for="salesContactName" class="control-label">
+                Contact Name
+            </label>
+            <div class="controls">
+            <input id="Details-salesContactName" name="salesContactName" type="text" value="{{salesContactName}}"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label for="primaryQMEmail" class="control-label">
+                Contact Email
+            </label>
+            <div class="controls">
+                <input id="Details-primaryQMEmail" name="primaryQMEmail" type="text" value="{{primaryQMEmail}}"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label for="primaryQMPhone" class="control-label">
+                Contact Phone Number
+            </label>
+            <div class="controls">
+                <input id="Details-primaryQMPhone" name="primaryQMPhone" type="text" value="{{primaryQMPhone}}"/>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <a href="#" class="pull-left btn btn-primary-qs js-submit">Save changes</a>
+    <a href="#" class="pull-left btn btn-link">Close</a>
+</div>

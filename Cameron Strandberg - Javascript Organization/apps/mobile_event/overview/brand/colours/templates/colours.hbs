@@ -1,0 +1,42 @@
+<div class="accordion-heading">
+    <a class="accordion-toggle" data-toggle="collapse" data-parent="#MEOverViewAccordion" href="#ColoursAccordion">
+        <h4>
+            <i class="accordion-indicator"></i>
+            Colours
+        </h4>
+    </a>
+</div>
+<div id="ColoursAccordion" class="accordion-body collapse in">
+    <div class="accordion-inner">
+        <div id="colours" class="row-fluid">
+            <div class="span12">
+                <div class="control-group">
+                    <p>Background is the image used on the app home screen to show behind your activity feed.</p>
+                    <div class="colorPicker clearfix">
+                        <form>
+                            <ul class="unstyled clearfix colours-container">
+                                <li>
+                                    <input type="hidden" class="minicolors-input" value="{{barTintColor}}" name="barTintColor">
+                                    <div>Bar Tint Colour</div>
+                                </li>
+                                <li>
+                                    <input type="hidden" class="minicolors-input" value="{{foreground1Colour}}" name="foreground1Colour">
+                                    <div>Primary Colour</div>
+                                </li>
+                                <li>
+                                    <input type="hidden" class="minicolors-input" value="{{foreground2Colour}}" name="foreground2Colour">
+                                    <div>Secondary Colour</div>
+                                </li>
+                                <li>
+                                    <input type="hidden" class="minicolors-input" value="{{header1Colour}}" name="header1Colour">
+                                    <div>Tertiary Colour</div>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <p><i class="icon-question-sign"></i> See Colour Examples: How these colours will be applied to your app</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

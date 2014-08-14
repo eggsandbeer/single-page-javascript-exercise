@@ -1,0 +1,1 @@
+define(["backbone","marionette"],function(e){return new e.Wreqr.EventAggregator});

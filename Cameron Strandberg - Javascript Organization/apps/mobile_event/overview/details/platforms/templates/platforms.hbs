@@ -1,0 +1,36 @@
+<div class="accordion-heading">
+    <a class="accordion-toggle" data-toggle="collapse" data-parent="#MEOverViewAccordion" href="#PlatformsAccordion">
+        <h4>
+            <i class="accordion-indicator"></i>
+            Platforms
+        </h4>
+    </a>
+</div>
+<div id="PlatformsAccordion" class="accordion-body collapse in">
+    <div class="accordion-inner">
+        <div class="alert alert-info">
+            <strong>Select Platforms</strong><br>Select the Manage Platforms button to specify which platforms you would like to use in your project.
+        </div>
+        <div id="platforms" class="row-fluid">
+            <div class="span12">
+                <div class="control-group">
+                    <div class="controls">
+                        <div class="btn-group fieldBuilderCheckbox">
+                        {{#each platforms}}
+                            {{#if enabled}}
+                                <div class="active">
+                                    <img src="/images/{{platform}}.png">
+                                    <p>{{platform}}</p>
+                                    <i class="icon-ok icon-white checkbox-deselect"></i>
+                                </div>
+                            {{/if}}
+                        {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary clear-fix js-overview-modal">Manage Platforms</button>
+        <button class="btn btn-primary clear-fix js-managelink-modal">Manage Unsupported Link</button>
+    </div>
+</div>

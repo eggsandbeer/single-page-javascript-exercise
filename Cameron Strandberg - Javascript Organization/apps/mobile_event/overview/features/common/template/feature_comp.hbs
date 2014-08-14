@@ -1,0 +1,17 @@
+<h4>{{title}} ({{featurecount}})</h4>
+<div class="features clearfix">
+{{#each units}}
+    {{#if configured}}
+    <div>
+        <p>{{name}}
+            <strong>{{version}}</strong>
+            {{!-- DATA ATTRS ARE BAD BUT DUE TO API LIMITATIONS, THEY ARE NECESSARY HERE. --}}
+            <a data-displayname="{{name}}" data-formrequesturl="{{editUrl}}" data-formsubmiturl="{{saveUrl}}" {{#if isJson}}data-isJSON="yep"{{/if}} href="#">
+                <i class="icon-cog"></i>
+            </a>
+        </p>
+    </div>
+    {{/if}}
+{{/each}}
+</div>
+<button class="btn btn-primary js-manage-features">{{buttontitle}}</button>

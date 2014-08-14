@@ -1,0 +1,29 @@
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h2>Manage Platforms</h2>
+    <p>Select platform(s) that you want to support</p>
+</div>
+<div class="modal-body">
+    <form>
+        <div id="platforms">
+            <div class="control-group">
+                <div class="controls">
+                    <div class="btn-group fieldBuilderCheckbox">
+                        {{#each platforms}}
+                        <div {{#if enabled}}class="active"{{/if}}>
+                            <img src="/images/{{platform}}.png">
+                            <p>{{platform}}</p>
+                            <i class="icon-ok icon-white checkbox-deselect"></i>
+                        </div>
+                        <input name="[platforms][{{platform}}][enabled]" type="checkbox" {{#if enabled}}checked{{/if}}>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <a href="#" class="pull-left btn btn-primary-qs js-submit">Save changes</a>
+    <a href="#" class="pull-left btn btn-link">Close</a>
+</div>
