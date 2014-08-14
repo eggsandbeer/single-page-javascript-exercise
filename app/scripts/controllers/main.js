@@ -3,8 +3,8 @@
 angular.module('singlePageJavascriptExerciseApp')
 
   .controller('MainCtrl', ['$scope', '$http', 'MainService', function($scope, $http, MainService){
-      $scope.userNotFound = false;
-      $scope.loaded = false;
+    $scope.userNotFound = false;
+    $scope.loaded = false;
 
     $scope.getGitInfo = function () {
       var userInfoPromise = MainService.getUserInfo($scope.username);

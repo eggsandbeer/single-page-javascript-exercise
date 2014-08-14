@@ -30,8 +30,11 @@
 
       <div ng-show="reposFound">
         <p><strong>Repos List:</strong></p>
-        <ul ng-repeat="repo in repos">
-          <li ng-click="alertGitInfo(repo)">Name: {{repo.name}} - watchers: {{repo.watchers_count}}</li>
+        <ul>
+          <li ng-repeat="repo in repos" ng-click="alertGitInfo(repo)">
+            <small>Name:</small> {{repo.name}} <br> <small>watchers:</small> {{repo.watchers_count}}
+            <hr>
+          </li>
         </ul>
       </div>
     </div>
