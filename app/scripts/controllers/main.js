@@ -32,6 +32,13 @@ angular.module('singlePageJavascriptExerciseApp')
       });
     };
 
+    $scope.keydown = function(e){
+      console.log(e)
+      if(e.keyCode === 13){
+        this.getGitInfo();
+      }
+    };
+
     $scope.alertGitInfo = function(repo){
       var alertmessage = 'id: '+repo.id+'. created at: '+repo.created_at;
       alert(alertmessage);
