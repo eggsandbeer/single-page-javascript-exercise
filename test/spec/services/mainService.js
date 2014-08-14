@@ -6,13 +6,21 @@ describe('Service: Mainservice', function () {
   beforeEach(module('singlePageJavascriptExerciseApp'));
 
   // instantiate service
-  var Mainservice;
-  beforeEach(inject(function (_Mainservice_) {
-    Mainservice = _Mainservice_;
+  var MainService;
+  beforeEach(inject(function (_MainService_) {
+    MainService = _MainService_;
   }));
 
-  it('should do something', function () {
-    expect(!!Mainservice).toBe(true);
+  it('should be defined', function () {
+    expect(MainService).toBeDefined();
   });
 
+  it('should have a get user info function attached', function () {
+    expect(MainService.getUserInfo).toBeDefined();
+  });
+
+  it('should have a get user info function attached', function () {
+    expect(MainService.getUserRepos).toBeDefined();
+
+  });
 });

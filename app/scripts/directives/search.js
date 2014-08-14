@@ -3,10 +3,7 @@
 angular.module('singlePageJavascriptExerciseApp')
   .directive('search', function () {
     return {
-      template: '<div></div>',
       restrict: 'E',
-      link: function postLink(scope, element, attrs) {
-        element.text('this is the search directive');
-      }
+      template: '<input type="text" ng-model="username" placeholder="Github username..." /><button ng-click="getGitInfo()">Pull User Data</button>'
     };
   });

@@ -1,3 +1,40 @@
-<h1>EA Single Page App Test</h1>
+<div class="row">
+  <div class="col-md-12">
+    <div class="well">
+      <h1>EA Single Page App Test</h1>
+      <p>Enter a single Github username below and click the button to display profile info.</p>
+      <search></search>
+    </div>
+  </div>
+</div>
+<div class="row" ng-show="userNotFound">
+  <div class="col-md-12">
+    <h2>No User Info Found</h2>
+  </div>
+</div>
+<div class="row" ng-show="loaded">
+  <div class="col-md-12">
+    <div class="well">
+      <h2> {{user.name}}
+         <span class="smallname">(@<a href="{{user.html_url}}" target="_blank"> {{user.login}} </a>)</span>
+      </h2>
+      <div class="avi">
+        <a href="{{ user.html_url }}" target="_blank">
+        <img class="img-circle" src="{{ user.avatar_url }}" width="80" height="80" alt="{{ user.login }}"></a>
+      </div>
+      Followers: {{ user.followers }} - Following: {{ user.following }}<br>Repos: {{ user.public_repos }}</p>
+    </div>
 
-<p>Your content goes in here (app/views/main.html).</p>
+    <div class="repolist well clearfix">
+      <p ng-hide="reposFound">No repos!</p>
+
+      <div ng-show="reposFound">
+        <p><strong>Repos List:</strong></p>
+        <ul ng-repeat="repo in repos">
+          <li ng-click="alertGitInfo(repo)">Name: {{repo.name}} - watchers: {{repo.watchers_count}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
